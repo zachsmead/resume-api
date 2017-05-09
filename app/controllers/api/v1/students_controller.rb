@@ -7,6 +7,8 @@ class Api::V1::StudentsController < ApplicationController
 		@student = Student.find_by(id: params[:id])
 	end
 
+	# test for commit
+
 	def create
 		@student = Student.new(
 			first_name: params[:first_name], 

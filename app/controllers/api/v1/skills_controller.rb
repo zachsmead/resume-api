@@ -8,7 +8,7 @@ class Api::V1::SkillsController < ApplicationController
 	end
 
 	def create
-		@skill = Skill.new(skill_name: params[:skill_name])
+		@skill = Skill.create(skill_name: params[:skill_name])
 		render :show
 	end
 

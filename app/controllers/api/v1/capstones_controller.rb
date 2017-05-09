@@ -9,7 +9,7 @@ class Api::V1::CapstonesController < ApplicationController
 	end
 
 	def create
-		@capstone = Capstone.new(name: params[:name], destription: params[:destription], url: params[:url], screenshot: params[:screenshot])
+		@capstone = Capstone.create(name: params[:name], destription: params[:destription], url: params[:url], screenshot: params[:screenshot])
 		render :show
 	end
 

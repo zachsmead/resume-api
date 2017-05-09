@@ -9,14 +9,17 @@ class Api::V1::CapstonesController < ApplicationController
 	end
 
 	def create
-		@capstone = Capstone.create(name: params[:name], destription: params[:destription], url: params[:url], screenshot: params[:screenshot])
-		render :show
+		@capstone = Capstone.new(name: params[:name], destription: params[:destription], url: params[:url], screenshot: params[:screenshot])
+		if @capstone.save
+			render 'show.json.jbuilder'
+		else
+			render json: {errors: @capstone.errors.full_messages}, status: 422
 	end
 
 	def update
 		capstone = Capstone.find_by(id: params[:id])
 		capstone.update(name: params[:name], destription: params[:destription], url: params[:url], screenshot: params[:screenshot])
-		render :show
+		render 'show.json.jbuilder'
 	end
 
 	def destroy

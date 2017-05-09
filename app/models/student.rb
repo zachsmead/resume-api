@@ -5,3 +5,6 @@ class Student < ApplicationRecord
 	has_many :student_skills
 	has_many :capstones
 end
+
+
+

@@ -8,14 +8,17 @@ class Api::V1::SkillsController < ApplicationController
 	end
 
 	def create
-		@skill = Skill.create(skill_name: params[:skill_name])
-		render :show
+		@skill = Skill.new(skill_name: params[:skill_name])
+		if @skill
+			render 'show.json.jbuilder'
+		else
+			render json: {errors: @skill.errors.full_messages}, status: 422
 	end
 
 	def update
 		@skill = Skill.find_by(id: params[:id])
 		@skill.update(skill_name: params[:skill_name])
-		render :show
+		render 'show.json.jbuilder'
 	end
 
 	def destroy

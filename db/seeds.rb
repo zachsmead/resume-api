@@ -97,12 +97,12 @@ Experience.create([
 
 
 Capstone.create([
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 1},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 2},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 3},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 4},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 5},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 6},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 7},
-	{name: Faker::Hipster.word , destription: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 8}
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 1},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 2},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 3},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 4},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 5},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 6},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 7},
+	{name: Faker::Hipster.word , description: Faker::Lorem.sentence, url: 'capstone.com', screenshot: 'capstone.jpg', student_id: 8}
 	])

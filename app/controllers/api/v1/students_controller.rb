@@ -10,7 +10,9 @@ class Api::V1::StudentsController < ApplicationController
 	def create
 		@student = Student.new(
 			first_name: params[:first_name], 
-			last_name: params[:last_name], 
+			last_name: params[:last_name],
+			password: params[:password], 
+			password_confirmation: params[:password_confirmation], 
 			phone_number: params[:phone_number],
 			bio: params[:bio],
 			linkedin_url: params[:linkedin_url],
@@ -36,6 +38,7 @@ class Api::V1::StudentsController < ApplicationController
 		Student.update(
 			first_name: params[:first_name], 
 			last_name: params[:last_name], 
+			password: params[:password],
 			phone_number: params[:phone_number],
 			bio: params[:bio],
 			linkedin_url: params[:linkedin_url],

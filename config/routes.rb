@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   namespace :api do
   	namespace :v1 do
   		resources :students
-      post 'students/login', to: "student#login"
+      post 'students/login', to: "students#login"
   	end
   end
 

@@ -68,8 +68,8 @@ class Api::V1::StudentsController < ApplicationController
 		email = params[:email]
 		password = params[:password]
 
-		student =  Student.find_by(email: email)
-		if student && student.authenticate(password)
+		@student =  Student.find_by(email: email)
+		if @student && @student.authenticate(password)
 			render 'show.json.jbuilder'
 		else
 			render json: { errors: "Authentication failed" }, status: 422

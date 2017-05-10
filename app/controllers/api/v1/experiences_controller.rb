@@ -15,6 +15,10 @@ class Api::V1::ExperiencesController < ApplicationController
 		end
 	end
 
+	def show
+		@experience = Experience.find_by(id: params[:id])
+	end
+
 	def update
 		@experience = Experience.find_by(id: params[:id])
 		@experience.update(start_date: params[:start_date], end_date: params[:end_date],

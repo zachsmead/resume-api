@@ -53,6 +53,7 @@ class Api::V1::StudentsController < ApplicationController
 			photo: params[:photo]
 		)
 
+
 		puts @student.errors.full_messages
 
 		render :show

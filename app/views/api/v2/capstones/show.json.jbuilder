@@ -1,1 +1,0 @@
-json.partial! 'capstone.json.jbuilder', capstone: @capstone

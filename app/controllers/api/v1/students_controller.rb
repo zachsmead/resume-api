@@ -51,7 +51,9 @@ class Api::V1::StudentsController < ApplicationController
 			photo: params[:photo]
 		)
 
-		render 'show.json.builder'
+		puts @student.errors.full_messages
+
+		render :show
 	end
 
 	def destroy

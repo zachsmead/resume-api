@@ -40,7 +40,7 @@ class Api::V1::StudentsController < ApplicationController
 		@student.update(
 			first_name: params[:first_name], 
 			last_name: params[:last_name], 
-			password: params[:password],
+			# password: params[:password],
 			phone_number: params[:phone_number],
 			bio: params[:bio],
 			linkedin_url: params[:linkedin_url],

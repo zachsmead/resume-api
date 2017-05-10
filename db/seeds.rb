@@ -9,21 +9,21 @@
 require 'faker'
 #CREATING STUDENTS
 Student.create([
-	{first_name: 'Demario', last_name: 'Marbray', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Demario', last_name: 'Marbray', email: 'hello@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'https://s-media-cache-ak0.pinimg.com/236x/00/e9/a3/00e9a3909c00d7d7b38466c787935649.jpg'},
-	{first_name: 'Jody', last_name: 'Lipkin', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Jody', last_name: 'Lipkin', email: 'bye@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'http://www.confidenceandselfesteem.com/wp-content/uploads/2016/03/61480226v.jpg'},
-	{first_name: 'Zackary', last_name: 'Smead', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Zackary', last_name: 'Smead', email: 'red@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'https://s-media-cache-ak0.pinimg.com/736x/5c/60/86/5c6086b7bc28e644af696f3a68a75e00.jpg'},
-	{first_name: 'Ken', last_name: 'Lu', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Ken', last_name: 'Lu', email: 'blue@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'http://haircutsformen.org/buzzblog/wp-content/gallery/haircuts-by-david/Short-Curly-Haircut.jpg'},
-	{first_name: 'Monia', last_name: 'Beas', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Monia', last_name: 'Beas', email: 'green@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'http://cdn0.sbnation.com/imported_assets/349365/gardler_meghan.jpg'},
-	{first_name: 'James', last_name: 'Lagattuta', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'James', last_name: 'Lagattuta', email: 'magenta@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'https://s-media-cache-ak0.pinimg.com/736x/4f/c2/2b/4fc22b03eeb7057eb68b7ec2d31a9abe.jpg'},
-	{first_name: 'Eddie', last_name: 'Kamand', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Eddie', last_name: 'Kamand', email: 'pink@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'http://ofad.org/files/daily-photo/recent-and-random-portraits_8.jpg'},
-	{first_name: 'Olga', last_name: 'Bylova', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
+	{first_name: 'Olga', last_name: 'Bylova', email: 'skateboard@gmail.com', password: 'hshahah', password_confirmation: 'hshahah', phone_number: '45362', bio: Faker::ChuckNorris.fact, linkedin_url: Faker::Internet.url,
 	twitter: Faker::Internet.url, site_url: Faker::Internet.url, resume_url: Faker::Internet.url, github_url: Faker::Internet.url, photo: 'http://i.dailymail.co.uk/i/pix/2016/12/11/03/3B4231BE00000578-0-image-m-191_1481428437390.jpg'}
 	])
 

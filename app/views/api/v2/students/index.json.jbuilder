@@ -11,4 +11,8 @@ json.array! @students do |student|
 	json.resume_url student.resume_url
 	json.github_url student.github_url
 	json.photo student.photo
+	json.experiences student.experiences
+	json.educations student.educations
+	json.skills student.skills
+	json.capstones student.capstones
 end

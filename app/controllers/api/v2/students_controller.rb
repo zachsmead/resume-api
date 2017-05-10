@@ -1,4 +1,4 @@
-class Api::V1::StudentsController < ApplicationController
+class Api::V2::StudentsController < ApplicationController
 	def index
 		@students = Student.all
 	end
@@ -52,7 +52,6 @@ class Api::V1::StudentsController < ApplicationController
 			github_url: params[:github_url],
 			photo: params[:photo]
 		)
-
 
 		puts @student.errors.full_messages
 

@@ -13,6 +13,7 @@ class Api::V1::SkillsController < ApplicationController
 			render 'show.json.jbuilder'
 		else
 			render json: {errors: @skill.errors.full_messages}, status: 422
+		end
 	end
 
 	def update

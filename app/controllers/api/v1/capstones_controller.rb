@@ -14,6 +14,7 @@ class Api::V1::CapstonesController < ApplicationController
 			render 'show.json.jbuilder'
 		else
 			render json: {errors: @capstone.errors.full_messages}, status: 422
+		end
 	end
 
 	def update

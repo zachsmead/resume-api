@@ -13,6 +13,7 @@ class Api::V1::StudentsController < ApplicationController
 		@student = Student.new(
 			first_name: params[:first_name], 
 			last_name: params[:last_name],
+			email: params[:email],
 			password: params[:password], 
 			password_confirmation: params[:password_confirmation], 
 			phone_number: params[:phone_number],
@@ -39,7 +40,8 @@ class Api::V1::StudentsController < ApplicationController
 
 		@student.update(
 			first_name: params[:first_name], 
-			last_name: params[:last_name], 
+			last_name: params[:last_name],
+			email: params[:email],
 			# password: params[:password],
 			phone_number: params[:phone_number],
 			bio: params[:bio],
@@ -59,5 +61,17 @@ class Api::V1::StudentsController < ApplicationController
 	def destroy
 		@student = Student.find_by(id: params[:id])
 		@student.destroy
+	end
+
+	def login
+		email = params[:email]
+		password = params[:password]
+
+		student =  Student.find_by(email: email)
+		if student && student.authenticate(password)
+			render 'show.json.jbuilder'
+		else
+			render json: { errors: "Authentication failed" }, status: 422
+		end
 	end
 end

@@ -37,7 +37,7 @@ class Api::V1::StudentsController < ApplicationController
 	def update
 		@student = Student.find_by(id: params[:id])
 
-		Student.update(
+		@student.update(
 			first_name: params[:first_name], 
 			last_name: params[:last_name], 
 			password: params[:password],

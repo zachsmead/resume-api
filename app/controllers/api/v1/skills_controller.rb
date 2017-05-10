@@ -24,8 +24,8 @@ class Api::V1::SkillsController < ApplicationController
 
 	def destroy
 		skill = Skill.find_by(id: params[:id])
-		skilll.destroy
-		@skill = Skill.all
+		skill.destroy
+		@skills = Skill.all
 		render :index
 	end
 end

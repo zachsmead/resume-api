@@ -51,7 +51,7 @@ class Api::V1::StudentsController < ApplicationController
 			photo: params[:photo]
 		)
 
-		render 'show.json.builder'
+		render :show
 	end
 
 	def destroy
